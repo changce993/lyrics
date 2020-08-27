@@ -1,0 +1,98 @@
+header{
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+}
+
+header form {
+    flex-direction: column;
+    align-items: center;
+}
+
+header form h1{
+    /* background: linear-gradient(90deg, blue,purple);
+    background-clip: text; */
+    color: white;
+}
+
+header form input{
+    width: 100%;
+    background-color: #fff;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    border-radius: .1rem;
+}
+
+header form h1{
+    width: 100%;
+    text-align: center;
+}
+
+header form button{
+    background-color: #fff;
+    margin: .5rem 0;
+    width: auto;
+    padding: .5rem 1rem;
+    border-radius: .1rem;
+    cursor: pointer;
+    transition:.3s;
+}
+
+header form button:hover{
+    background-color: #000;
+    color: white;
+}
+
+main{
+    flex-direction: column;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+.left, .right{
+    width: 100%;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+    padding: 3rem;
+}
+
+.left::-webkit-scrollbar, .right::-webkit-scrollbar{
+    display: none;
+}
+
+.left h2, .right h2{
+    margin: 0 0 2rem ;
+}
+
+.left img{
+    width: 100%;
+}
+
+p{
+    line-height:2rem;
+    letter-spacing: .1rem;
+}
+
+@media(min-width: 769px){
+    header form h1{
+        width: 50%;
+    }
+    header{
+        padding: 5rem 0;
+    }
+    header form input{
+        width: 30%;
+    }
+    .right{
+        width: 60%;
+    }
+
+    .left{
+        width: 40%;
+    }
+    main{
+        flex-direction: row;
+    }
+}
